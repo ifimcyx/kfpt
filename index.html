@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>控制台-卡片</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 导航栏 -->
+        <nav class="nav">
+            <div class="op-web-header">
+                <div class="op-web-header__content">
+                    <section class="header-left">
+                        <div class="logo-container">
+                            <img src="images/logo.png" alt="Logo" class="logo">
+                        </div>
+                        <div class="menu-items">
+                            <div class="nav-item">
+                                <a href="#" class="nav-link">首页</a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="#" class="nav-link">方案</a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="#" class="nav-link">优秀案例</a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="#" class="nav-link">Wiki 动态</a>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="header-right">
+                        <div class="right-menu">
+                            <div class="menu-item">
+                                <div class="icon-text">
+                                    <span class="icon bell-icon"></span>
+                                    <span>消息</span>
+                                </div>
+                            </div>
+                            <div class="nav-item">
+                                <a href="#" class="nav-link">文档</a>
+                            </div>
+                            <div class="nav-item active">
+                                <a href="#" class="nav-link active">控制台</a>
+                            </div>
+                            <div class="avatar-container">
+                                <div class="avatar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 主要内容区域 -->
+        <div class="main-content">
+            <!-- 左侧应用卡片区域 -->
+            <div class="app-cards-container">
+                <div class="block">
+                    <!-- 标题和搜索区域 -->
+                    <div class="title-group">
+                        <div class="title-element">
+                            <h2 class="title">我的应用</h2>
+                        </div>
+                        <div class="search-actions">
+                            <div class="search-group">
+                                <div class="search-input">
+                                    <div class="input-prefix">
+                                        <span class="search-icon"></span>
+                                    </div>
+                                    <div class="input-field">
+                                        <input type="text" placeholder="请输入应用名或唯一标识关键词">
+                                    </div>
+                                </div>
+                                <button class="search-button">
+                                    <span class="search-button-icon"></span>
+                                </button>
+                                <div class="segment-control">
+                                    <div class="segment-item">
+                                        <div class="segment-icon list-icon"></div>
+                                    </div>
+                                    <div class="segment-item active">
+                                        <div class="segment-icon grid-icon"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="create-button">
+                                <span class="plus-icon"></span>
+                                <span>创建应用</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 应用卡片列表 -->
+                    <div class="app-cards-row">
+                        <!-- 应用卡片1 -->
+                        <div class="app-card">
+                            <div class="app-card-content">
+                                <div class="app-logo">
+                                    <img src="images/app1.png" alt="应用Logo">
+                                </div>
+                                <div class="app-info">
+                                    <div class="app-name-container">
+                                        <h3 class="app-name">官方测试应用AAA</h3>
+                                    </div>
+                                    <div class="app-id">
+                                        <span>testdemo_aaa</span>
+                                        <span class="copy-icon"></span>
+                                    </div>
+                                </div>
+                                <div class="tag bound">已绑定</div>
+                            </div>
+                            <div class="app-stats">
+                                <div class="stats-row">
+                                    <div class="stat-item">
+                                        <span class="stat-label">页面</span>
+                                        <span class="stat-value">3</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">区块</span>
+                                        <span class="stat-value">3</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">组件</span>
+                                        <span class="stat-value">3</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">模板</span>
+                                        <span class="stat-value">3</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">Scheme</span>
+                                        <span class="stat-value">0</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">数据源</span>
+                                        <span class="stat-value">3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 应用卡片2 -->
+                        <div class="app-card">
+                            <div class="app-card-content">
+                                <div class="app-logo">
+                                    <img src="images/app2.png" alt="应用Logo">
+                                </div>
+                                <div class="app-info">
+                                    <div class="app-name-container">
+                                        <h3 class="app-name">官方测试应用AAA</h3>
+                                    </div>
+                                    <div class="app-id">
+                                        <span>testdemo_aaa</span>
+                                        <span class="copy-icon"></span>
+                                    </div>
+                                </div>
+                                <div class="tag unbound">未绑定</div>
+                            </div>
+                            <div class="app-stats">
+                                <div class="stats-row">
+                                    <div class="stat-item">
+                                        <span class="stat-label">页面</span>
+                                        <span class="stat-value">3</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">区块</span>
+                                        <span class="stat-value">3</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">组件</span>
+                                        <span class="stat-value">3</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">模板</span>
+                                        <span class="stat-value">3</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">Scheme</span>
+                                        <span class="stat-value">0</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">数据源</span>
+                                        <span class="stat-value">3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 应用卡片列表第二行 -->
+                    <div class="app-cards-row">
+                        <!-- 应用卡片3 -->
+                        <div class="app-card">
+                            <div class="app-card-content">
+                                <div class="app-logo">
+                                    <img src="images/app3.png" alt="应用Logo">
+                                </div>
+                                <div class="app-info">
+                                    <div class="app-name-container">
+                                        <h3 class="app-name">官方测试应用AAA</h3>
+                                    </div>
+                                    <div class="app-id">
+                                        <span>testdemo_aaa</span>
+                                        <span class="copy-icon"></span>
+                                    </div>
+                                </div>
+                                <div class="tag">Tag</div>
+                            </div>
+                            <div class="app-stats">
+                                <div class="stats-row">
+                                    <div class="stat-item">
+                                        <span class="stat-label">页面</span>
+                                        <span class="stat-value">3</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">区块</span>
+                                        <span class="stat-value">3</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">组件</span>
+                                        <span class="stat-value">3</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">模板</span>
+                                        <span class="stat-value">3</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">Scheme</span>
+                                        <span class="stat-value">0</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">数据源</span>
+                                        <span class="stat-value">3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 应用卡片4 -->
+                        <div class="app-card">
+                            <div class="app-card-content">
+                                <div class="app-logo">
+                                    <img src="images/app4.png" alt="应用Logo">
+                                </div>
+                                <div class="app-info">
+                                    <div class="app-name-container">
+                                        <h3 class="app-name">官方测试应用AAA</h3>
+                                    </div>
+                                    <div class="app-id">
+                                        <span>testdemo_aaa</span>
+                                        <span class="copy-icon"></span>
+                                    </div>
+                                </div>
+                                <div class="tag">Tag</div>
+                            </div>
+                            <div class="app-stats">
+                                <div class="stats-row">
+                                    <div class="stat-item">
+                                        <span class="stat-label">页面</span>
+                                        <span class="stat-value">3</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">区块</span>
+                                        <span class="stat-value">3</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">组件</span>
+                                        <span class="stat-value">3</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">模板</span>
+                                        <span class="stat-value">3</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">Scheme</span>
+                                        <span class="stat-value">0</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">数据源</span>
+                                        <span class="stat-value">3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 应用卡片列表第三行 -->
+                    <div class="app-cards-row">
+                        <!-- 应用卡片5 -->
+                        <div class="app-card">
+                            <div class="app-card-content">
+                                <div class="app-logo">
+                                    <img src="images/app5.png" alt="应用Logo">
+                                </div>
+                                <div class="app-info">
+                                    <div class="app-name-container">
+                                        <h3 class="app-name">官方测试应用AAA</h3>
+                                    </div>
+                                    <div class="app-id">
+                                        <span>testdemo_aaa</span>
+                                        <span class="copy-icon"></span>
+                                    </div>
+                                </div>
+                                <div class="tag">Tag</div>
+                            </div>
+                            <div class="app-stats">
+                                <div class="stats-row">
+                                    <div class="stat-item">
+                                        <span class="stat-label">页面</span>
+                                        <span class="stat-value">3</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">区块</span>
+                                        <span class="stat-value">3</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">组件</span>
+                                        <span class="stat-value">3</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">模板</span>
+                                        <span class="stat-value">3</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">Scheme</span>
+                                        <span class="stat-value">0</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">数据源</span>
+                                        <span class="stat-value">3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 空白卡片（透明） -->
+                        <div class="app-card empty"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右侧业务线和消息公告区域 -->
+            <div class="sidebar">
+                <!-- 业务线卡片 -->
+                <div class="notice business-card">
+                    <div class="title-section">
+                        <div class="title-group">
+                            <div class="title-element">
+                                <h2 class="title">业务线</h2>
+                            </div>
+                            <div class="action-buttons">
+                                <button class="icon-button">
+                                    <span class="refresh-icon"></span>
+                                </button>
+                                <button class="more-button">
+                                    <span>更多</span>
+                                    <span class="arrow-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="business-content">
+                        <div class="business-info">
+                            <img src="images/business_bg.png" alt="业务线背景" class="business-bg">
+                            <div class="business-details">
+                                <div class="business-name-row">
+                                    <h3 class="business-name">这里是业务线名称</h3>
+                                    <span class="edit-icon"></span>
+                                </div>
+                                <div class="business-id">Midas_demo</div>
+                            </div>
+                        </div>
+                        <div class="admin-section">
+                            <div class="admin-title">管理员</div>
+                            <div class="admin-list">
+                                <div class="admin-row">
+                                    <div class="admin-item">
+                                        <div class="admin-avatar avatar1"></div>
+                                        <span class="admin-name">成大星</span>
+                                    </div>
+                                </div>
+                                <div class="admin-row">
+                                    <div class="admin-item">
+                                        <div class="admin-avatar avatar2"></div>
+                                        <span class="admin-name">成小兴</span>
+                                    </div>
+                                </div>
+                                <div class="admin-row">
+                                    <div class="admin-item">
+                                        <div class="admin-avatar avatar3"></div>
+                                        <span class="admin-name">岑小星</span>
+                                    </div>
+                                    <span class="admin-count">共9个</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 消息公告卡片 -->
+                <div class="notice message-card">
+                    <div class="title-section">
+                        <div class="title-group">
+                            <div class="title-element">
+                                <h2 class="title">消息公告</h2>
+                            </div>
+                            <button class="more-button">
+                                <span>更多</span>
+                                <span class="arrow-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="message-list">
+                        <!-- 消息1 -->
+                        <div class="message-item">
+                            <div class="message-header">
+                                <div class="message-title-row">
+                                    <img src="images/notice1.png" alt="通知图标" class="notice-icon">
+                                    <h3 class="message-title">应用严重缺陷</h3>
+                                </div>
+                                <div class="message-time">今天 10:00</div>
+                            </div>
+                            <p class="message-content">MIS11月功能上新：包括支持通过浏览器插件切换PPE环境PPE环境PPE环境</p>
+                        </div>
+                        <!-- 消息2 -->
+                        <div class="message-item">
+                            <div class="message-header">
+                                <div class="message-title-row">
+                                    <img src="images/notice2.png" alt="通知图标" class="notice-icon">
+                                    <h3 class="message-title">应用严重缺陷</h3>
+                                </div>
+                                <div class="message-time">今天 10:00</div>
+                            </div>
+                            <p class="message-content">MIS11月功能上新：包括支持通过浏览器插件切换PPE环境PPE环境PPE环境</p>
+                        </div>
+                        <!-- 消息3 -->
+                        <div class="message-item">
+                            <div class="message-header">
+                                <div class="message-title-row">
+                                    <img src="images/notice3.png" alt="通知图标" class="notice-icon">
+                                    <h3 class="message-title">应用严重缺陷</h3>
+                                </div>
+                                <div class="message-time">今天 10:00</div>
+                            </div>
+                            <p class="message-content">MIS11月功能上新：包括支持通过浏览器插件切换PPE环境PPE环境PPE环境</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
